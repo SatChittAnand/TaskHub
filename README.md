@@ -33,7 +33,7 @@ Instructions on how to install and set up your project.
 
 ```bash
 # Example:
-https://github.com/Ayushkumar675/TaskHub.git
+https://github.com/SatChittAnand/TaskHub.git
 cd TaskHub
 npm install
 npm run dev
