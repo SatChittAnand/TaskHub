@@ -56,7 +56,7 @@ We welcome contributions to TaskHub! To contribute, please follow these guidelin
 1. **Fork the Repository**: Start by forking the repository to your GitHub account.
 2. **Clone the Repository**: Clone the forked repository to your local machine.
    ```bash
-  https://github.com/Ayushkumar675/TaskHub.git
+  [https://github.com/SatChittAnand/TaskHub.git]
    ```
 3. **Create a Branch**: Create a new branch for your feature or bug fix.
    ```bash
