@@ -1,78 +1,155 @@
-# Project Name
-TaskHub
+<h1 align="center">🚀 TaskHub</h1>
 
-## Description
- Discover TaskHub, the ultimate project 
-management tool boasting a seamless Kanban 
-board inspired by Trello. Effortlessly visualize 
-tasks, monitor progress, and foster team 
-synergy for unparalleled task management 
-efficiency.
- With our intuitive drag-and-drop interface, 
-teams can easily organize work items, track 
-project milestones, and maintain clear visibility 
-of their workflow. The flexible board structure 
-adapts to your unique processes, whether 
-you're managing software development sprints, 
-marketing campaigns, or personal tasks.
- TaskHub combines the simplicity you love with 
-powerful features you need: customizable 
-workflows, real-time collaboration, automated 
-notifications, and detailed activity tracking. 
-Experience a new level of productivity as you 
-transform the way your team works together.
+<p align="center">
+  <strong>Modern Kanban Project Management Tool</strong><br>
+  Built with <code>React</code>, <code>TypeScript</code>, <code>Node.js</code>, and <code>Tailwind CSS</code>
+</p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18.2.0-blue?logo=react" />
+  <img src="https://img.shields.io/badge/TypeScript-5.2.0-blue?logo=typescript" />
+  <img src="https://img.shields.io/badge/Node.js-20.x-green?logo=node.js" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+</p>
 
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
+---
 
-## Installation
-Instructions on how to install and set up your project.
+<h2>📝 Overview</h2>
 
-```bash
-# Example:
-https://github.com/SatChittAnand/TaskHub.git
+<p>
+TaskHub is a sleek, Kanban-style project management tool designed for teams and individuals. With drag-and-drop task handling, real-time collaboration, and customizable workflows, TaskHub helps you stay organized and productive.
+</p>
+
+<ul>
+  <li>Visualize tasks with clarity</li>
+  <li>Track progress and milestones</li>
+  <li>Collaborate in real-time</li>
+  <li>Automate notifications</li>
+  <li>Maintain transparency with activity logs</li>
+</ul>
+
+---
+
+<h2>🛠️ Tech Stack</h2>
+
+<table>
+  <tr>
+    <th>Frontend</th>
+    <th>Backend</th>
+    <th>Tooling & DevOps</th>
+  </tr>
+  <tr>
+    <td>React 18</td>
+    <td>Node.js 20</td>
+    <td>Vite</td>
+  </tr>
+  <tr>
+    <td>TypeScript</td>
+    <td>Express.js</td>
+    <td>ESLint + Prettier</td>
+  </tr>
+  <tr>
+    <td>Zustand</td>
+    <td>JWT Auth</td>
+    <td>Husky + GitHub</td>
+  </tr>
+</table>
+
+---
+
+<h2>📚 Table of Contents</h2>
+
+<ul>
+  <li><a href="#features">Features</a></li>
+  <li><a href="#installation">Installation</a></li>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#environment-setup">Environment Setup</a></li>
+  <li><a href="#contributing">Contributing</a></li>
+  <li><a href="#license">License</a></li>
+</ul>
+
+---
+
+<h2 id="features">✨ Features</h2>
+
+<details>
+  <summary><strong>Click to expand feature list</strong></summary>
+  <ul>
+    <li>🧩 Kanban Board with drag-and-drop</li>
+    <li>🔄 Customizable workflows</li>
+    <li>👥 Real-time collaboration</li>
+    <li>🔔 Automated notifications</li>
+    <li>📈 Activity tracking</li>
+    <li>🎯 Milestone monitoring</li>
+    <li>🔐 JWT-based authentication</li>
+  </ul>
+</details>
+
+---
+
+<h2 id="installation">⚙️ Installation</h2>
+
+<pre>
+git clone https://github.com/SatChittAnand/TaskHub.git
 cd TaskHub
 npm install
 npm run dev
-```
+</pre>
 
-## Usage
-Discover how to use TaskHub for efficient project management.
+<p><em>Requires Node.js ≥ 20 and npm ≥ 9</em></p>
 
-1. **Visualize Tasks**: Use the Kanban board to create and manage tasks. Drag and drop tasks to different columns to reflect their status.
-2. **Monitor Progress**: Track project milestones and monitor the progress of tasks in real-time.
-3. **Team Collaboration**: Foster team synergy with real-time collaboration features. Assign tasks to team members and communicate within the platform.
-4. **Customizable Workflows**: Adapt the board structure to your unique processes. Customize workflows to fit your project needs.
-5. **Automated Notifications**: Stay updated with automated notifications for task updates and deadlines.
-6. **Activity Tracking**: Keep a detailed log of all activities within the project for transparency and accountability.
+---
 
+<h2 id="usage">🚀 Usage</h2>
 
-## Contributing
-We welcome contributions to TaskHub! To contribute, please follow these guidelines:
+<ol>
+  <li>Create tasks and assign team members</li>
+  <li>Drag & drop tasks across columns</li>
+  <li>Customize workflows to match your process</li>
+  <li>Collaborate and comment in real-time</li>
+  <li>Receive smart notifications</li>
+  <li>Track activity logs for transparency</li>
+</ol>
 
-1. **Fork the Repository**: Start by forking the repository to your GitHub account.
-2. **Clone the Repository**: Clone the forked repository to your local machine.
-   ```bash
-  [https://github.com/SatChittAnand/TaskHub.git]
-   ```
-3. **Create a Branch**: Create a new branch for your feature or bug fix.
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-4. **Make Changes**: Make your changes to the codebase.
-5. **Commit Changes**: Commit your changes with a descriptive commit message.
-   ```bash
-   git commit -m "Add feature: description of your feature"
-   ```
-6. **Push Changes**: Push your changes to your forked repository.
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-7. **Create a Pull Request**: Open a pull request to the main repository. Provide a clear description of your changes and any related issues.
+---
 
-Please ensure your code adheres to our coding standards and includes appropriate tests. Thank you for contributing!
+<h2 id="environment-setup">🌐 Environment Setup</h2>
 
+<p>Create a <code>.env</code> file in the root directory:</p>
 
+<pre>
+VITE_API_URL=http://localhost:5000/api
+VITE_JWT_SECRET=your_jwt_secret
+</pre>
+
+<p><strong>Note:</strong> Never commit your <code>.env</code> file.</p>
+
+---
+
+<h2 id="contributing">🤝 Contributing</h2>
+
+<details>
+  <summary><strong>Click to view contribution steps</strong></summary>
+
+  <ol>
+    <li>Fork the repository</li>
+    <li>Clone your fork</li>
+    <pre>git clone https://github.com/your-username/TaskHub.git</pre>
+    <li>Create a feature branch</li>
+    <pre>git checkout -b feature/your-feature-name</pre>
+    <li>Make your changes</li>
+    <li>Commit with a descriptive message</li>
+    <pre>git commit -m "Add: your feature description"</pre>
+    <li>Push to your fork</li>
+    <pre>git push origin feature/your-feature-name</pre>
+    <li>Open a pull request</li>
+  </ol>
+
+  <p>Please follow our coding standards and include relevant tests.</p>
+</details>
+
+---
+
+<h2 id="license">📄 License</h2>
+
+<p>This project is licensed under the <a href="LICENSE">MIT License</a>.</p>
