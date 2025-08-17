@@ -2,13 +2,14 @@
 
 <p align="center">
   <strong>Modern Kanban Project Management Tool</strong><br>
-  Built with <code>React</code>, <code>TypeScript</code>, <code>Node.js</code>, and <code>Tailwind CSS</code>
+  Built with <code>React</code>, <code>TypeScript</code>, <code>Node.js</code>, <code>Tailwind CSS</code>, and <code>Clerk</code> for authentication
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-18.2.0-blue?logo=react" />
   <img src="https://img.shields.io/badge/TypeScript-5.2.0-blue?logo=typescript" />
   <img src="https://img.shields.io/badge/Node.js-20.x-green?logo=node.js" />
+  <img src="https://img.shields.io/badge/Clerk-Auth-lightgrey?logo=clerk" />
   <img src="https://img.shields.io/badge/License-MIT-yellow.svg" />
 </p>
 
@@ -26,6 +27,7 @@ TaskHub is a sleek, Kanban-style project management tool designed for teams and 
   <li>Collaborate in real-time</li>
   <li>Automate notifications</li>
   <li>Maintain transparency with activity logs</li>
+  <li>Secure authentication powered by Clerk</li>
 </ul>
 
 ---
@@ -50,7 +52,7 @@ TaskHub is a sleek, Kanban-style project management tool designed for teams and 
   </tr>
   <tr>
     <td>Zustand</td>
-    <td>JWT Auth</td>
+    <td>Clerk Auth</td>
     <td>Husky + GitHub</td>
   </tr>
 </table>
@@ -64,6 +66,7 @@ TaskHub is a sleek, Kanban-style project management tool designed for teams and 
   <li><a href="#installation">Installation</a></li>
   <li><a href="#usage">Usage</a></li>
   <li><a href="#environment-setup">Environment Setup</a></li>
+  <li><a href="#clerk-setup">Clerk Setup</a></li>
   <li><a href="#contributing">Contributing</a></li>
   <li><a href="#license">License</a></li>
 </ul>
@@ -81,7 +84,7 @@ TaskHub is a sleek, Kanban-style project management tool designed for teams and 
     <li>🔔 Automated notifications</li>
     <li>📈 Activity tracking</li>
     <li>🎯 Milestone monitoring</li>
-    <li>🔐 JWT-based authentication</li>
+    <li>🔐 Authentication via Clerk</li>
   </ul>
 </details>
 
@@ -103,6 +106,7 @@ npm run dev
 <h2 id="usage">🚀 Usage</h2>
 
 <ol>
+  <li>Sign in using Clerk authentication</li>
   <li>Create tasks and assign team members</li>
   <li>Drag & drop tasks across columns</li>
   <li>Customize workflows to match your process</li>
@@ -119,10 +123,25 @@ npm run dev
 
 <pre>
 VITE_API_URL=http://localhost:5000/api
-VITE_JWT_SECRET=your_jwt_secret
+CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
 </pre>
 
 <p><strong>Note:</strong> Never commit your <code>.env</code> file.</p>
+
+---
+
+<h2 id="clerk-setup">🔐 Clerk Setup</h2>
+
+<ol>
+  <li>Go to <a href="https://clerk.dev" target="_blank">Clerk.dev</a> and create an account</li>
+  <li>Create a new Clerk application</li>
+  <li>Copy your <strong>Publishable Key</strong> and <strong>Secret Key</strong></li>
+  <li>Paste them into your <code>.env</code> file</li>
+  <li>Wrap your app with <code>&lt;ClerkProvider&gt;</code> and use <code>SignedIn</code>, <code>SignedOut</code> components</li>
+</ol>
+
+<p>For more details, check out the <a href="https://clerk.dev/docs" target="_blank">Clerk Documentation</a>.</p>
 
 ---
 
